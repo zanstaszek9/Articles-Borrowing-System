@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="578.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="518.0" layoutY="155.0" text="Search">
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+         <graphic>
+            <SVGPath content="M21.76 19.008c-1.76 1.76-4.032 2.656-6.304 2.656-2.080 0-4.128-0.736-5.824-2.112l-1.632 4-4.16 4.16c-0.448 0.32-0.928 0.48-1.44 0.48-1.312 0-2.4-1.184-2.4-2.464 0-0.512 0.16-1.024 0.48-1.44l4.128-4.16 4.032-1.632c-1.408-1.664-2.112-3.744-2.112-5.824 0-4.864 4.064-8.864 8.928-8.864 4.8 0 8.864 4.096 8.864 8.896 0 2.304-0.832 4.608-2.56 6.304zM11.552 16.608c1.088 1.056 2.496 1.6 3.904 1.6 2.944 0 5.44-2.464 5.44-5.504 0-2.976-2.528-5.44-5.44-5.44-3.008 0-5.504 2.528-5.504 5.44 0 1.44 0.544 2.848 1.6 3.904z" style="-fx-fill: #EEB9A0;" />
+         </graphic>
+      </Label>
+      <TextField fx:id="IDSearch" layoutX="304.0" layoutY="235.0" prefHeight="31.0" prefWidth="272.0" />
+      <Button fx:id="searchResearcherSubmit" layoutX="596.0" layoutY="218.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="105.0" style="-fx-border-color: #EEB9A0; -fx-border-width: 3; -fx-background-color: #A9D8E6;" text="Search&#10; for &#10;Researcher" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+         <graphic>
+            <SVGPath content="M20 21.859c0 2.281-1.5 4.141-3.328 4.141h-13.344c-1.828 0-3.328-1.859-3.328-4.141 0-4.109 1.016-8.859 5.109-8.859 1.266 1.234 2.984 2 4.891 2s3.625-0.766 4.891-2c4.094 0 5.109 4.75 5.109 8.859zM16 8c0 3.313-2.688 6-6 6s-6-2.688-6-6 2.688-6 6-6 6 2.688 6 6z" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="searchArticleSubmit" layoutX="714.0" layoutY="218.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="81.0" style="-fx-border-color: #EEB9A0; -fx-border-width: 3; -fx-background-color: #F2F6D0;" text="Search&#10; for &#10;Article" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+         <graphic>
+            <SVGPath content="M 17.58053,24.637487 H 0.61495052 V 5.0201596 L 5.1235785,0.65541668 H 17.57027 V 24.637487 Z M 15.507813,2.7658457 H 6.6584305 v 3.741202 H 2.6774085 V 22.527065 L 15.491917,22.340687 Z" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

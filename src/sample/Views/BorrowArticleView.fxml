@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="617.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="411.0" layoutY="40.0" prefHeight="47.0" text="Assign Article">
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+         <graphic>
+            <SVGPath content="m 7.0582034,260.11011 -6.90632487,6.6864 v 30.05151 H 18.667415 v -3.2328 H 3.3110753 v -24.54067 h 6.0988748 v -5.73099 H 22.965709 v 9.55155 h 3.159785 v -12.785 z m 17.4838276,14.22021 c -2.530302,0 -4.581267,2.05034 -4.581267,4.5809 0,2.53024 2.050965,4.58038 4.581267,4.58038 2.530331,0 4.580697,-2.05014 4.580697,-4.58038 0,-2.53056 -2.051518,-4.5809 -4.580697,-4.5809 z m -2.296555,11.46934 c -2.53607,0 -4.591952,2.05587 -4.591952,4.59193 v 2.29601 h 13.776444 v -2.29601 c 0,-2.53606 -2.0559,-4.59193 -4.591961,-4.59193 z" style="-fx-fill: #8B95C9;" />
+         </graphic>
+      </Label>
+      <GridPane layoutX="159.0" layoutY="192.0" prefHeight="190.0" prefWidth="713.0">
+         <children>
+            <Label prefHeight="17.0" text="Article Details" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <Label text="Researcher Details" GridPane.columnIndex="2" GridPane.halignment="RIGHT">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <Button fx:id="borrowArticleSubmit" mnemonicParsing="false" prefHeight="65.0" prefWidth="102.0" style="-fx-background-color: #8B95C9;" text="Borrow" textAlignment="CENTER" textFill="WHITE" wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.rowSpan="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+               <graphic>
+                  <SVGPath content="m 7.0582034,260.11011 -6.90632487,6.6864 v 30.05151 H 18.667415 v -3.2328 H 3.3110753 v -24.54067 h 6.0988748 v -5.73099 H 22.965709 v 9.55155 h 3.159785 v -12.785 z m 17.4838276,14.22021 c -2.530302,0 -4.581267,2.05034 -4.581267,4.5809 0,2.53024 2.050965,4.58038 4.581267,4.58038 2.530331,0 4.580697,-2.05014 4.580697,-4.58038 0,-2.53056 -2.051518,-4.5809 -4.580697,-4.5809 z m -2.296555,11.46934 c -2.53607,0 -4.591952,2.05587 -4.591952,4.59193 v 2.29601 h 13.776444 v -2.29601 c 0,-2.53606 -2.0559,-4.59193 -4.591961,-4.59193 z" style="-fx-fill: #FFFFFF;" />
+               </graphic>
+            </Button>
+            <ChoiceBox fx:id="researcherSelect" prefWidth="150.0" GridPane.columnIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <Label layoutX="476.0" layoutY="19.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <TextArea fx:id="articleDetails" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowSpan="5" GridPane.valignment="TOP" />
+            <TextArea fx:id="researcherDetails" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="4" GridPane.valignment="TOP" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

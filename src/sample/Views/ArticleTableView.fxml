@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contentPane" prefHeight="578.0" prefWidth="1127.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="497.0" layoutY="40.0" text="Articles">
+         <font>
+            <Font name="Calibri" size="32.0" />
+         </font>
+         <graphic>
+            <SVGPath content="M6.816 28.928q0 1.44-0.992 2.24t-2.4 0.832q-1.92 0-3.072-1.184l0.992-1.568q0.896 0.8 1.92 0.8 0.512 0 0.896-0.256t0.384-0.768q0-1.12-1.888-0.992l-0.448-0.992q0.128-0.192 0.576-0.768t0.768-0.992 0.64-0.672v-0.032q-0.288 0-0.864 0.032t-0.864 0v0.96h-1.888v-2.72h5.952v1.568l-1.696 2.080q0.896 0.192 1.44 0.864t0.544 1.568zM6.848 17.728v2.848h-6.464q-0.128-0.64-0.128-0.96 0-0.928 0.448-1.664t0.992-1.216 1.184-0.864 0.992-0.768 0.448-0.8q0-0.448-0.288-0.704t-0.704-0.224q-0.8 0-1.44 1.024l-1.504-1.056q0.416-0.896 1.28-1.408t1.888-0.512q1.28 0 2.176 0.736t0.896 2.016q0 0.896-0.608 1.632t-1.344 1.152-1.344 0.896-0.64 0.96h2.272v-1.088h1.888zM32 23.424v3.424q0 0.224-0.16 0.416t-0.416 0.16h-21.696q-0.256 0-0.416-0.16t-0.16-0.416v-3.424q0-0.256 0.16-0.416t0.416-0.16h21.696q0.224 0 0.416 0.192t0.16 0.384zM6.848 7.36v1.792h-5.984v-1.792h1.92q0-0.704 0-2.144t0.032-2.176v-0.224h-0.032q-0.16 0.32-0.896 0.96l-1.28-1.344 2.432-2.272h1.888v7.2h1.92zM32 14.272v3.456q0 0.224-0.16 0.384t-0.416 0.16h-21.696q-0.256 0-0.416-0.16t-0.16-0.384v-3.456q0-0.224 0.16-0.384t0.416-0.16h21.696q0.224 0 0.416 0.16t0.16 0.384zM32 5.152v3.424q0 0.224-0.16 0.384t-0.416 0.192h-21.696q-0.256 0-0.416-0.192t-0.16-0.384v-3.424q0-0.256 0.16-0.416t0.416-0.16h21.696q0.224 0 0.416 0.16t0.16 0.416z" style="-fx-fill: #B8DAA2;" />
+         </graphic>
+      </Label>
+      <TableView fx:id="articlesTable" layoutX="247.0" layoutY="226.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #F2F6D0; -fx-border-width: 2 0 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <Button fx:id="deleteArticleButton" layoutX="146.0" layoutY="64.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="80.0" text="Delete">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <SVGPath content="m3.7551,14.04082l8.77551,0l0.87755,-9.65306l-10.53062,0l0.87755,9.65306zm6.14286,-12.28572l0,-1.7551l-3.51021,0l0,1.7551l-4.38776,0l0,2.63265l0.87755,-0.87755l10.53062,0l0.87755,0.87755l0,-2.63265l-4.38776,0zm-0.87755,0l-1.7551,0l0,-0.87755l1.7551,0l0,0.87755z" style="-fx-fill: #BF4342;" />
+         </graphic>
+      </Button>
+      <Button fx:id="editArticleButton" layoutX="69.0" layoutY="64.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="65.0" text="Edit">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <SVGPath content="m11.75697,0c1.20226,0 2.17722,0.97496 2.17722,2.17722c0,0.49031 -0.16198,0.9423 -0.43545,1.30633l-0.87088,0.87088l-3.0481,-3.0481l0.87088,-0.87088c0.36403,-0.27346 0.81602,-0.43545 1.30633,-0.43545zm-10.88609,10.0152l-0.87088,3.91899l3.91899,-0.87088l8.0557,-8.0557l-3.0481,-3.0481l-8.0557,8.0557zm8.8665,-5.06769l-6.09621,6.09621l-0.75071,-0.75071l6.09621,-6.09621l0.75071,0.75071z" style="-fx-fill: #D8973C;" />
+         </graphic>
+      </Button>
+      <Button fx:id="borrowArticleButton" layoutX="238.0" layoutY="64.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="90.0" text="Borrow">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <SVGPath content="m 3.1257757,280.66299 -3.0585152,2.96112 v 13.30853 h 8.1997372 v -1.43167 H 1.4663333 v -10.86801 h 2.7009301 v -2.53801 h 6.0032646 v 4.22997 h 1.399333 v -5.66193 z m 7.7428383,6.29752 c -1.1205631,0 -2.0288474,0.90801 -2.0288474,2.02869 0,1.12053 0.9082843,2.02846 2.0288474,2.02846 1.120574,0 2.028593,-0.90793 2.028593,-2.02846 0,-1.12068 -0.908528,-2.02869 -2.028593,-2.02869 z m -1.0170465,5.07928 c -1.1231166,0 -2.0335785,0.91046 -2.0335785,2.03358 v 1.0168 h 6.100997 v -1.0168 c 0,-1.12312 -0.91047,-2.03358 -2.033584,-2.03358 z" style="-fx-fill: #8B95C9;" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
